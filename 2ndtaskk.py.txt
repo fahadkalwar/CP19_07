@@ -1,0 +1,9 @@
+#library
+
+import tkinter
+ 
+window = Tk()
+ 
+window.title("WELCOME")
+ 
+window.mainloop()
