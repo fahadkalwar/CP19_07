@@ -1,0 +1,7 @@
+#library
+
+import math
+
+b=16
+x=math.sqrt(b)
+print(x)
