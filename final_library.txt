@@ -1,0 +1,1 @@
+We will use tkinter library,math library, sub-process library in scientific calculator in python project
