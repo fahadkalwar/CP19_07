@@ -1,0 +1,6 @@
+Saad mughaal will create the buttons of sci.calculator with the help of khizer saeed.
+
+
+Ahmed khan will create the fuctions of sci.calculator with help of Junaid Rasheed.
+
+Fahad will creates the GUI of sci.calculator.
