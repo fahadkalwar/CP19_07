@@ -1,0 +1,31 @@
+ def createWidgets(self):
+        self.prevAns = Entry(self, font=("Courier New", 14), relief=RAISED, justify=RIGHT, foreground='#e8e8e8',
+                             borderwidth=0, background='#3E4E59')
+        self.prevAns.insert(0,"")
+        self.prevAns.grid(row=0, column=0, columnspan=5, sticky="nsew")
+
+        self.display = Entry(self, font=("Courier New", 24), relief=RAISED, justify=RIGHT, background='#3E4E59',
+                             foreground='#e8e8e8', borderwidth=0)
+        self.display.insert(0, "0")
+        self.display.grid(row=1, column=0, columnspan=5, sticky="nsew")
+
+        # First row of buttons
+        self.sinButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="sin", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("sin("))
+        self.sinButton.grid(row=2, column=0, sticky="nsew")
+
+        self.cosButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="cos", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("cos("))
+        self.cosButton.grid(row=2, column=1, sticky="nsew")
+
+        self.tanButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="tan", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("tan("))
+        self.tanButton.grid(row=2, column=2, sticky="nsew")
+
+        self.logButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="log", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("log("))
+        self.logButton.grid(row=2, column=3, sticky="nsew")
+
+        self.piButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Pi", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("pi"))
+        self.piButton.grid(row=2, column=4, sticky="nsew")
