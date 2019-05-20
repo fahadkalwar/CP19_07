@@ -1,0 +1,21 @@
+# Third row of buttons
+
+        self.inverseButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="1/x", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("1/("))
+        self.inverseButton.grid(row=4, column=0, sticky="nsew")
+
+        self.ceButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="CE", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda:self.clearDisplay())
+        self.ceButton.grid(row=4, column=1, sticky="nsew")
+
+        self.clearButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="C", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.clearAll())
+        self.clearButton.grid(row=4, column=2, sticky="nsew")
+
+        self.delButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Del", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.deleteLast())
+        self.delButton.grid(row=4, column=3, sticky="nsew")
+
+        self.divButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="/", borderwidth=1,
+                               background='#F25652', activebackground='#a8a8a8', command=lambda: self.addToDisplay("/"))
+        self.divButton.grid(row=4, column=4, sticky="nsew")
