@@ -1,0 +1,21 @@
+# Sixth row of buttons
+
+        self.negToggleButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="+-", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.negToggle())
+        self.negToggleButton.grid(row=7, column=0, sticky="nsew")
+
+        self.oneButton = Button(self, font=("Courier New", 14), foreground='#474747', text="1", borderwidth=1,
+                                background='#aaaaaa', activebackground='#a8a8a8', command=lambda: self.addToDisplay("1"))
+        self.oneButton.grid(row=7, column=1, sticky="nsew")
+
+        self.twoButton = Button(self, font=("Courier New", 14), foreground='#474747', text="2", borderwidth=1,
+                                background='#aaaaaa', activebackground='#a8a8a8', command=lambda: self.addToDisplay("2"))
+        self.twoButton.grid(row=7, column=2, sticky="nsew")
+
+        self.threeButton = Button(self, font=("Courier New", 14), foreground='#474747', text="3", borderwidth=1,
+                                background='#aaaaaa', activebackground='#a8a8a8', command=lambda: self.addToDisplay("3"))
+        self.threeButton.grid(row=7, column=3, sticky="nsew")
+
+        self.plusButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="+", borderwidth=1,
+                               background='#F25652', activebackground='#a8a8a8', command=lambda: self.addToDisplay("+"))
+        self.plusButton.grid(row=7, column=4, sticky="nsew")
