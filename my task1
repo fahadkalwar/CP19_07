@@ -1,0 +1,32 @@
+import math
+
+        if 'Ans' in userFunction:
+            userFunction = userFunction.replace('Ans', self.prevAns.get())    
+        if 'sin(' in userFunction:
+            userFunction = userFunction.replace('sin(', 'math.sin(')
+        if 'cos(' in userFunction:
+            userFunction = userFunction.replace('cos(', 'math.cos(')
+        if 'tan(' in userFunction:
+            userFunction = userFunction.replace('tan(', 'math.tan(')
+        if 'log(' in userFunction:
+            userFunction = userFunction.replace('log(', 'math.log10(')
+       
+        try:
+            val = eval(userFunction)
+            if not(userFunction == '0') and not(isinstance(val, tuple)):
+
+               1
+            else:
+                self.replaceText("0")
+        except NameError:
+            self.replaceText("Illegal Characters")
+        except (SyntaxError, AttributeError):
+            self.replaceText("Syntax Error")
+        except TypeError:
+            self.replaceText("Illegal Expression")
+     
+   
+
+   
+
+
