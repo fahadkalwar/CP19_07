@@ -1,0 +1,18 @@
+import  math
+     
+      
+        if 'sqrt(' in userFunction:
+            userFunction = userFunction.replace('sqrt(', 'math.sqrt(')
+        if 'pi' in userFunction:
+            userFunction = userFunction.replace('pi', 'math.pi')
+        if 'fact(' in userFunction:
+            userFunction = userFunction.replace('fact(', 'math.factorial(')
+        if 'e' in userFunction:
+            userFunction = userFunction.replace('e', 'math.e')
+
+
+    
+        except ZeroDivisionError:
+            self.replaceText("Cannot Divide by 0")
+        except ValueError:
+            self.replaceText("No Solution")
