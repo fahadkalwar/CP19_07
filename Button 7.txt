@@ -1,0 +1,21 @@
+# Seventh row of buttons
+
+        self.leftParenButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="(", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("("))
+        self.leftParenButton.grid(row=8, column=0, sticky="nsew")
+
+        self.rightParenButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text=")", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay(")"))
+        self.rightParenButton.grid(row=8, column=1, sticky="nsew")
+
+        self.zeroButton = Button(self, font=("Courier New", 14), foreground='#474747', text="0", borderwidth=1,
+                                background='#aaaaaa', activebackground='#a8a8a8', command=lambda: self.addToDisplay("0"))
+        self.zeroButton.grid(row=8, column=2, sticky="nsew")
+
+        self.decimalButton = Button(self, font=("Courier New", 14), foreground='#474747', text=".", borderwidth=1,
+                                background='#aaaaaa', activebackground='#a8a8a8', command=lambda: self.addToDisplay("."))
+        self.decimalButton.grid(row=8, column=3, sticky="nsew")
+
+        self.equalsButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="=", borderwidth=1,
+                               background='#F25652', activebackground='#a8a8a8', command=lambda: self.evalDisplay())
+        self.equalsButton.grid(row=8, column=4, sticky="nsew")
