@@ -1,0 +1,21 @@
+# Second row of buttons
+
+        self.sinButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="sqrt", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("sqrt("))
+        self.sinButton.grid(row=3, column=0, sticky="nsew")
+
+        self.cosButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Mod", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("%"))
+        self.cosButton.grid(row=3, column=1, sticky="nsew")
+
+        self.tanButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="x^2", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("**2"))
+        self.tanButton.grid(row=3, column=2, sticky="nsew")
+
+        self.logButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="x^3", borderwidth=1,
+                                background='#8c8c8c', activebackground='#a8a8a8', command=lambda: self.addToDisplay("**3"))
+        self.logButton.grid(row=3, column=3, sticky="nsew")
+
+        self.piButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="^", borderwidth=1,
+                               background='#F25652', activebackground='#a8a8a8', command=lambda: self.addToDisplay("**("))
+        self.piButton.grid(row=3, column=4, sticky="nsew")
