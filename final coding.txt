@@ -192,149 +192,149 @@ class Pycalc(Frame):
         self.display.grid(row=1, column=0, columnspan=5, sticky="nsew")
 
         # First row of buttons
-        self.sinButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="sin", borderwidth=1,
+        self.sinButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="sin", borderwidth=5,
                                 background='#7B68EE', activebackground='#a8a8a8', command=lambda: self.addToDisplay("sin("))
         self.sinButton.grid(row=2, column=0, sticky="nsew")
 
-        self.cosButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="cos", borderwidth=1,
+        self.cosButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="cos", borderwidth=5,
                                 background='#7B68EE', activebackground='#a8a8a8', command=lambda: self.addToDisplay("cos("))
         self.cosButton.grid(row=2, column=1, sticky="nsew")
 
-        self.tanButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="tan", borderwidth=1,
+        self.tanButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="tan", borderwidth=5,
                                 background='#7B68EE', activebackground='#a8a8a8', command=lambda: self.addToDisplay("tan("))
         self.tanButton.grid(row=2, column=2, sticky="nsew")
 
-        self.logButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="log", borderwidth=1,
+        self.logButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="log", borderwidth=5,
                                 background='#7B68EE', activebackground='#a8a8a8', command=lambda: self.addToDisplay("log("))
         self.logButton.grid(row=2, column=3, sticky="nsew")
 
-        self.piButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Pi", borderwidth=1,
+        self.piButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="π", borderwidth=5,
                                 background='#7B68EE', activebackground='#a8a8a8', command=lambda: self.addToDisplay("pi"))
         self.piButton.grid(row=2, column=4, sticky="nsew")
 
         # Second row of buttons
-        self.sinButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="sqrt", borderwidth=1,
+        self.sinButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="√", borderwidth=5,
                                 background='#4B0082', activebackground='#a8a8a8', command=lambda: self.addToDisplay("sqrt("))
         self.sinButton.grid(row=3, column=0, sticky="nsew")
 
-        self.cosButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Mod", borderwidth=1,
+        self.cosButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Mod", borderwidth=5,
                                 background='#4B0082', activebackground='#a8a8a8', command=lambda: self.addToDisplay("%"))
         self.cosButton.grid(row=3, column=1, sticky="nsew")
 
-        self.tanButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="x^2", borderwidth=1,
+        self.tanButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="x^2", borderwidth=5,
                                 background='#4B0082', activebackground='#a8a8a8', command=lambda: self.addToDisplay("**2"))
         self.tanButton.grid(row=3, column=2, sticky="nsew")
 
-        self.logButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="x^3", borderwidth=1,
+        self.logButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="x^3", borderwidth=5,
                                 background='#4B0082', activebackground='#a8a8a8', command=lambda: self.addToDisplay("**3"))
         self.logButton.grid(row=3, column=3, sticky="nsew")
 
-        self.piButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="^", borderwidth=1,
+        self.piButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="^", borderwidth=5,
                                background='#4B0082', activebackground='#a8a8a8', command=lambda: self.addToDisplay("**("))
         self.piButton.grid(row=3, column=4, sticky="nsew")
 
         # Third row of buttons
-        self.inverseButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="1/x", borderwidth=1,
+        self.inverseButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="1/x", borderwidth=5,
                                 background='#4A708B', activebackground='#a8a8a8', command=lambda: self.addToDisplay("1/("))
         self.inverseButton.grid(row=4, column=0, sticky="nsew")
 
-        self.ceButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="CE", borderwidth=1,
+        self.ceButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="CE", borderwidth=5,
                                 background='#FF4500', activebackground='#a8a8a8', command=lambda:self.clearDisplay())
         self.ceButton.grid(row=4, column=1, sticky="nsew")
 
-        self.clearButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="C", borderwidth=1,
+        self.clearButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="C", borderwidth=5,
                                 background='#FF4500', activebackground='#a8a8a8', command=lambda: self.clearAll())
         self.clearButton.grid(row=4, column=2, sticky="nsew")
 
-        self.delButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Del", borderwidth=1,
+        self.delButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="Del", borderwidth=5,
                                 background='#FF4500', activebackground='#a8a8a8', command=lambda: self.deleteLast())
         self.delButton.grid(row=4, column=3, sticky="nsew")
 
-        self.divButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="/", borderwidth=1,
+        self.divButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="÷", borderwidth=5,
                                background='#607B8B', activebackground='#a8a8a8', command=lambda: self.addToDisplay("/"))
         self.divButton.grid(row=4, column=4, sticky="nsew")
 
         # Fourth row of buttons
-        self.eButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="e", borderwidth=1,
+        self.eButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="e", borderwidth=5,
                                 background='#4A708B', activebackground='#a8a8a8', command=lambda: self.addToDisplay("e"))
         self.eButton.grid(row=5, column=0, sticky="nsew")
 
-        self.sevenButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="7", borderwidth=1,
+        self.sevenButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="7", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("7"))
         self.sevenButton.grid(row=5, column=1, sticky="nsew")
 
-        self.eightButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="8", borderwidth=1,
+        self.eightButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="8", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("8"))
         self.eightButton.grid(row=5, column=2, sticky="nsew")
 
-        self.nineButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="9", borderwidth=1,
+        self.nineButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="9", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("9"))
         self.nineButton.grid(row=5, column=3, sticky="nsew")
 
-        self.multButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="*", borderwidth=1,
+        self.multButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="*", borderwidth=5,
                                background='#607B8B', activebackground='#a8a8a8', command=lambda: self.addToDisplay("*"))
         self.multButton.grid(row=5, column=4, sticky="nsew")
 
         # Fifth row of buttons
-        self.factButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="fact", borderwidth=1,
+        self.factButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="fact", borderwidth=5,
                                 background='#4A708B', activebackground='#a8a8a8', command=lambda: self.addToDisplay("fact("))
         self.factButton.grid(row=6, column=0, sticky="nsew")
 
-        self.fourButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="4", borderwidth=1,
+        self.fourButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="4", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("4"))
         self.fourButton.grid(row=6, column=1, sticky="nsew")
 
-        self.fiveButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="5", borderwidth=1,
+        self.fiveButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="5", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("5"))
         self.fiveButton.grid(row=6, column=2, sticky="nsew")
 
-        self.sixButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="6", borderwidth=1,
+        self.sixButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="6", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("6"))
         self.sixButton.grid(row=6, column=3, sticky="nsew")
 
-        self.minusButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="-", borderwidth=1,
+        self.minusButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="-", borderwidth=5,
                                background='#607B8B', activebackground='#a8a8a8', command=lambda: self.addToDisplay("-"))
         self.minusButton.grid(row=6, column=4, sticky="nsew")
 
         # Sixth row of buttons
-        self.negToggleButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="+-", borderwidth=1,
+        self.negToggleButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="+-", borderwidth=5,
                                 background='#4A708B', activebackground='#a8a8a8', command=lambda: self.negToggle())
         self.negToggleButton.grid(row=7, column=0, sticky="nsew")
 
-        self.oneButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="1", borderwidth=1,
+        self.oneButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="1", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("1"))
         self.oneButton.grid(row=7, column=1, sticky="nsew")
 
-        self.twoButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="2", borderwidth=1,
+        self.twoButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="2", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("2"))
         self.twoButton.grid(row=7, column=2, sticky="nsew")
 
-        self.threeButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="3", borderwidth=1,
+        self.threeButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="3", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("3"))
         self.threeButton.grid(row=7, column=3, sticky="nsew")
 
-        self.plusButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="+", borderwidth=1,
+        self.plusButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="+", borderwidth=5,
                                background='#607B8B', activebackground='#a8a8a8', command=lambda: self.addToDisplay("+"))
         self.plusButton.grid(row=7, column=4, sticky="nsew")
 
         # Seventh row of buttons
-        self.leftParenButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="(", borderwidth=1,
+        self.leftParenButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="(", borderwidth=5,
                                 background='#4F94CD', activebackground='#a8a8a8', command=lambda: self.addToDisplay("("))
         self.leftParenButton.grid(row=8, column=0, sticky="nsew")
 
-        self.rightParenButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text=")", borderwidth=1,
+        self.rightParenButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text=")", borderwidth=5,
                                 background='#4F94CD', activebackground='#a8a8a8', command=lambda: self.addToDisplay(")"))
         self.rightParenButton.grid(row=8, column=1, sticky="nsew")
 
-        self.zeroButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="0", borderwidth=1,
+        self.zeroButton = Button(self, font=("Courier New", 14), foreground='#F4F4F4', text="0", borderwidth=5,
                                 background='#8B2500', activebackground='#a8a8a8', command=lambda: self.addToDisplay("0"))
         self.zeroButton.grid(row=8, column=2, sticky="nsew")
 
-        self.decimalButton = Button(self, font=("Courier New", 14), foreground='#474747', text=".", borderwidth=1,
+        self.decimalButton = Button(self, font=("Courier New", 14), foreground='#474747', text=".", borderwidth=5,
                                 background='#4F94CD', activebackground='#a8a8a8', command=lambda: self.addToDisplay("."))
         self.decimalButton.grid(row=8, column=3, sticky="nsew")
 
-        self.equalsButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="=", borderwidth=1,
+        self.equalsButton = Button(self, font=("Courier New", 14), foreground='#e8e8e8', text="=", borderwidth=5,
                                background='#32CD32', activebackground='#a8a8a8', command=lambda: self.evalDisplay())
         self.equalsButton.grid(row=8, column=4, sticky="nsew")
 
