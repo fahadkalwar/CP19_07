@@ -1,0 +1,13 @@
+try:
+    from Tkinter import *
+except ImportError:
+    from tkinter import *
+import math
+
+class Pycalc(Frame):
+    UPDATE_DISPLAY = False
+    def __init__(self, master, *args, **kwargs):
+        Frame.__init__(self, master, *args, **kwargs)
+        self.parent = master
+        self.grid()
+        self.createWidgets()
