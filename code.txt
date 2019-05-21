@@ -1,0 +1,10 @@
+ def createWidgets(self):
+        self.prevAns = Entry(self, font=("Courier New", 14), relief=RAISED, justify=RIGHT, foreground='#e8e8e8',
+                             borderwidth=0, background='#3E4E59')
+        self.prevAns.insert(0,"")
+        self.prevAns.grid(row=0, column=0, columnspan=5, sticky="nsew")
+
+        self.display = Entry(self, font=("Courier New", 24), relief=RAISED, justify=RIGHT, background='#3E4E59',
+                             foreground='#e8e8e8', borderwidth=0)
+        self.display.insert(0, "0")
+        self.display.grid(row=1, column=0, columnspan=5, sticky="nsew")
